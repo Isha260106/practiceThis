@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up To Trade Nerds</title>
+    <link rel="stylesheet" href="styleForsignup.css">
+</head>
+<body>
+    <div class="navbar">
+        <img id="logo" src="tradeNerdsLogo.png"/>
+        <h1 id="MainHeading">Trade Nerds</h1>
+        <a href="portfolio.html" class="NavbarLinks" id="portfolio">My Portfolio </a>
+    </div>
+    <div id="signup">
+        <form id="signupForm" method="post">
+            <fieldset>
+            <legend>Login</legend>
+            <label>Name</label>
+            <input type="text" id="Name"/><br/><br/>
+            <div class="error" id="NameError"></div><br/>
+            <label>Email</label>
+            <input type="email" id="email"/><br><br>
+            <div class="error" id="EmailError"></div><br/>
+            <label>UserName :</label>
+            <input type="text" id="username"/><br/><br/>
+            <div class="error" id="userNameError"></div><br/>
+            <label>Password :</label>
+            <input type="password" id="password"/><br/><br/>
+            <div class="error" id="passwordError"></div><br/>
+            <label> Confirm Password :</label>
+            <input type="password" id="Confirmpassword"/><br/><br/>
+            <div class="error" id="ConfirmpasswordError"></div><br/>
+            <h3>Enter your KYC details : </h3><br>
+            <label>PAN Number : </label>
+            <input type="text" id="panNo"><br><br>
+            <div class="error" id="PANnumError"></div><br/>
+            <label>Bank Account Number :</label>
+            <input type="number" id="acNo"/><br><br>
+            <div class="error" id="ACnumError"></div><br/>
+            <label>Bank Name : </label>
+            <input type="text" id="bankName"><br><br>
+            <div class="error" id="bankNameError"></div><br/>
+            <label>Present Balance : </label>
+            <input type="number" id="balance"><br><br>
+            <div class="error" id="balanceError"></div><br/>
+            <label>Bank IFSC code : </label>
+            <input type="text" id="ifscCode"><br><br>
+            <div class="error" id="IFSCCodeError"></div><br/>
+            <input type="submit" value="Sign-Up" id="signupBtn"><br/><br/>
+            
+        </fieldset>
+        </form>
+    </div>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <p>&copy; 2024 Trade Nerds. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="signupScript.js"></script>
+</body>
+</html>

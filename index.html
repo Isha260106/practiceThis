@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tradeNerds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<body>
+    <div class="navbar">
+        <img id="logo" src="tradeNerdsLogo.png"/>
+        <h1 id="MainHeading">Trade Nerds</h1>
+        <a href="portfolio.html" class="NavbarLinks" id="portfolio">My Portfolio </a>
+        
+    </div>
+    <div id="Login">
+        <form id="userForm" method="get">
+            <fieldset>
+            <legend>Login</legend>
+            <label>UserName :</label>
+            <input type="text" id="username"/><br/><br/>
+            <div class="error" id="userNameError"></div><br/>
+            <label>Password :</label>
+            <input type="password" id="password"/><br/><br/>
+            <div class="error" id="passwordError"></div><br/>
+            <input type="submit" value="Login" id="loginBtn"><br/><br/>
+            <label for="Signup">Don't have an account ??</label>&nbsp;&nbsp;
+            <a href="signup.html">Sign-Up</a>
+        </fieldset>
+        </form>
+    </div>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <p style="color: azure;">&copy; 2024 Trade Nerds. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

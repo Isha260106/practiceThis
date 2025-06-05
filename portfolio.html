@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+</head>
+<body>
+    <div id="main">
+    <center><h1>My Portfolio </h1></center>
+    <center>
+  <div id="userBalance">
+    <br>
+    <div>Current Balance: <span id="currentBal"></span></div><br>
+    <div>Amount Invested: <span id="investedVal">0</span></div>
+    
+  </div>
+</center><br><br>
+    <div class="container">
+    <center><table id="MarketShareTable" style="border: 1px solid black;">
+        <caption>Present Market Share Values</caption>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Company Name</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="Apple">
+                <td>AAPL</td>
+                <td>Apple Inc.</td>
+                <td>150.25</td>
+                <td id="changeApple"></td>
+                <td><input type="button" id="AddAppleStock" value="Add (+)"></td>
+            </tr>
+            <tr id="Microsoft">
+                <td>MSFT</td>
+                <td>Microsoft Corporation</td>
+                <td>285.45</td>
+                <td id="changeMicrosoft"></td>
+                <td><input type="button" id="AddMicrosoftStock" value="Add (+)"></td>
+            </tr>
+            <tr id="Google">
+                <td>GOOGL</td>
+                <td>Google.com</td>
+                <td>2750.80</td>
+                <td id="changeGoogle"></td>
+                <td><input type="button" id="AddGoogleStock" value="Add (+)"></td>
+            </tr>
+            <tr id="Amazon">
+                <td>AMZN</td>
+                <td>Amazon.com Inc</td>
+                <td>3300.25</td>
+                <td id="changeAmazon"></td>
+                <td><input type="button" id="AddAmazonStock" value="Add (+)"></td>
+            </tr>
+            <tr id="Meta">
+                <td>META</td>
+                <td>Meta Platforms Inc</td>
+                <td>150.25</td>
+                <td id="changeMeta"></td>
+                <td><input type="button" id="AddMetaStock" value="Add (+)"></td>
+            </tr>
+            <tr id="Tesla">
+                <td>TSLA</td>
+                <td>Tesla, Inc</td>
+                <td>875.65</td>
+                <td id="changeTesla"></td>
+                <td><input type="button" id="AddTeslaStock" value="Add (+)"></td>
+            </tr>
+        </tbody>
+    </table></center>
+    <br><br><br>
+    <center><table id="added Stocks" style="border: 1px solid black;">
+    <caption>Purchased Shares</caption>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Company Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Value</th> 
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="PurchasedShareBody"></tbody>
+</table></center>
+    </div>
+    </div>
+    <center><button onclick="logout()">Logout</button></center>
+    <script>
+function logout() {
+    window.localStorage.removeItem("isLoggedIn");
+    window.localStorage.removeItem("loggedInUser");
+    window.location.href = "index.html";
+}
+</script>
+    <script src="portfolioScript.js"></script>
+</body>
+</html>
